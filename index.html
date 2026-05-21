@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>INGENIUS PRO — Instalare și întreținere aer condiționat</title>
+    <meta
+      name="description"
+      content="INGENIUS PRO — Montaj, service și întreținere aer condiționat în Satu Mare."
+    />
+    <link rel="stylesheet" href="src/css/style.css?v=10" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#hero">
+          <img src="assets/logo.png" alt="INGENIUS PRO" class="logo" />
+        </a>
+        <nav class="site-nav" id="siteNav">
+          <a href="#despre">Despre</a>
+          <a href="#servicii">Servicii</a>
+          <!-- <a href="#program">Program</a> -->
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="container hero-inner">
+          <img src="assets/logo.png" alt="INGENIUS PRO" class="hero-logo" />
+          <h1>
+            Confortul casei sau al spațiului tău începe cu o instalare făcută
+            corect și cu grijă.
+          </h1>
+          <p class="lead">
+            Alege un serviciu de instalare realizat corect, rapid și fără
+            compromisuri.
+          </p>
+          <a class="btn-primary" href="#contact">Contactează-ne</a>
+        </div>
+      </section>
+
+      <section id="despre" class="section about">
+        <div class="container">
+          <h2>Despre Noi</h2>
+          <p>
+            Punem accent pe calitate, detalii și pe o experiență cât mai simplă
+            și plăcută pentru fiecare client. Lucrăm cu seriozitate, comunicăm
+            deschis și respectăm fiecare programare. Indiferent că este vorba
+            despre un apartament, o casă sau un spațiu comercial, tratăm fiecare
+            lucrare cu aceeași implicare și atenție.
+          </p>
+        </div>
+      </section>
+
+      <section id="servicii" class="section services">
+        <div class="container">
+          <h2>Servicii</h2>
+          <div class="services-grid">
+            <article class="card">
+              <h3>Montaj Profesional</h3>
+              <p>
+                Oferim servicii complete de montaj pentru aparate de aer
+                condiționat, atât pentru locuințe, cât și pentru birouri sau
+                spații comerciale, folosind echipamente profesionale și soluții
+                moderne pentru rezultate eficiente și de durată.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Calitate Estetică</h3>
+              <p>
+                Ne dorim ca fiecare montaj să fie realizat curat, atent și cât
+                mai estetic, astfel încât tu să te bucuri de confort și de un
+                aparat care funcționează perfect încă din prima zi.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Asistență & Întreținere</h3>
+              <p>
+                Te ajutăm să alegi soluția potrivită pentru spațiul tău, ne
+                ocupăm de instalare, verificare și punerea în funcțiune, iar la
+                nevoie oferim și servicii de întreținere pentru ca sistemul tău
+                de climatizare să funcționeze eficient în orice sezon.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-inner">
+        <img src="assets/logo.png" alt="INGENIUS PRO" class="footer-logo" />
+        <form id="contactForm" class="contact-form" novalidate>
+          <label for="name">Nume</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="phone">Telefon</label>
+          <input id="phone" name="phone" type="tel" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Mesaj</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="btn-primary">Trimite mesaj</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+
+        <div class="footer-details">
+          <section class="footer-panel">
+            <h3>Programul nostru</h3>
+            <p>Luni - Vineri: 8:00 - 16:00<br />Sâmbătă & Duminică: închis</p>
+          </section>
+
+          <section class="footer-panel">
+            <h3>Contact</h3>
+            <p>
+              Telefon: <a href="tel:0745610044">0745610044</a><br />Email:
+              <a href="mailto:ingeniuspro@yahoo.com">ingeniuspro@yahoo.com</a>
+            </p>
+            <p class="note">
+              Pentru mai multe detalii sunați la numărul afișat.
+            </p>
+          </section>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.emailjs.com/sdk/3.6.2/email.min.js"></script>
+    <script>
+      // EmailJS configuration: set with values provided by you
+      window.emailjsConfig = {
+        serviceId: "service_qyc8x78",
+        templateId: "template_1x8dyec",
+        publicKey: "r-6PjHvdkWW1EDrvP",
+      };
+      // Choose send method: 'mailto' | 'emailjs' | 'server'
+      window.formSendMethod = "mailto";
+    </script>
+
+    <script src="src/js/main.js?v=11"></script>
+  </body>
+</html>

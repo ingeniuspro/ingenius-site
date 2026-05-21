@@ -1,0 +1,80 @@
+# Context Proiect: Site Informativ One-Page pentru "INGENIUS PRO"
+[cite_start]Suntem în anul 2026. Avem de realizat un site web de tip o singură pagină (One-Page), curat, modern, performant și complet responsive (Mobile-first), destinat serviciilor de instalare și întreținere aer condiționat în Satu Mare[cite: 2, 5, 14].
+
+## 1. Structura de Fișiere Recomandată
+Generează proiectul folosind următoarea structură modulară:
+├── index.html          # Structura semantică HTML5 a paginii
+├── src/
+│   ├── ts/
+│   │   └── main.ts     # Logica TypeScript (formular, scroll, meniu mobil)
+│   └── css/
+│       └── style.css   # Stilurile CSS (folosind variabile și Flexbox/Grid)
+└── assets/
+    └── logo.png        # Logo-ul firmei (deja existent)
+
+---
+
+## 2. Cerințe Tehnice & Arhitectură
+
+### A. HTML (index.html) - Semantic și SEO-friendly
+* Folosește o structură semantică clară: `<header>`, `<main>`, `<section id="...">`, `<footer>`.
+* Elemente cheie de inclus:
+    * Meniu de navigare cu link-uri ancoră (`#despre`, `#servicii`, `#program`, `#contact`).
+    * [cite_start]Secțiunea **Hero** cu logo-ul, sloganul și un buton mare de tip Call-to-Action (CTA) către formular[cite: 7, 15].
+    * [cite_start]Secțiuni dedicate pentru Despre Noi, Servicii și Program[cite: 4, 6, 11].
+    * Un **Formular de Contact** în footer cu câmpurile: Nume, Telefon, Email, Mesaj și un buton de trimitere.
+
+### B. CSS (style.css) - Responsive & Design System
+* **Abordare Mobile-First:** Scrie stilurile de bază pentru ecrane mici (telefoane), iar apoi folosește `@media (min-width: 768px)` pentru laptop/desktop.
+* **Paleta de culori (Extrasă din logo):**
+    * `--primary-blue`: #0d233a (sau bleomarinul închis din textul logo-ului)
+    * `--accent-green`: #4caf50 (sau verdele din "PRO")
+    * `--bg-light`: #f9f9f9
+    * `--text-dark`: #333333
+* **Layout:** Folosește **CSS Flexbox** pentru alinierea elementelor din header și carduri, și **CSS Grid** pentru structura secțiunii de servicii și contact pe desktop.
+* Ensure all interactive elements (`a`, `button`, `input`) au stări de `:hover` și `:focus` finisate.
+
+### C. TypeScript (main.ts) - Interactivitate
+* **Meniu Mobil:** Implementează deschiderea/închiderea meniului de tip "hamburger" pe ecranele mobile.
+* **Smooth Scroll:** Asigură-te că tranziția dintre secțiuni la apăsarea pe meniu este fluidă.
+* **Validare Formular:** Validează câmpurile formularului înainte de trimitere (ex: numărul de telefon să conțină doar cifre, email-ul să fie valid). Oprește trimiterea nativă cu `e.preventDefault()` pentru a simula trimiterea unui payload JSON.
+
+---
+
+## 3. Conținutul Exact care Trebuie Integrat
+
+Te rog să folosești textele de mai jos în secțiunile corespunzătoare:
+
+### Identitate (Header & Hero)
+* **Nume Companie:** INGENIUS PRO
+* **Slogan:** CONFORTUL TĂU. ENERGIA NOASTRĂ. VIITORUL NOSTRU.
+* [cite_start]**Titlu Principal:** Confortul casei sau al spațiului tău începe cu o instalare făcută corect și cu grijă. [cite: 1]
+* [cite_start]**Text CTA:** Alege un serviciu de instalare realizat corect, rapid și fără compromisuri. [cite: 7]
+
+### Despre Noi / Valori
+* [cite_start]**Text:** Punem accent pe calitate, detalii și pe o experiență cât mai simplă și plăcută pentru fiecare client. [cite: 4] Lucrăm cu seriozitate, comunicăm deschis și respectăm fiecare programare. [cite_start]Indiferent că este vorba despre un apartament, o casă sau un spațiu comercial, tratăm fiecare lucrare cu aceeași implicare și atenție. [cite: 6]
+
+### Servicii (Să fie reprezentate prin 3 piloni/carduri vizuale)
+1. [cite_start]**Montaj Profesional:** Oferim servicii complete de montaj pentru aparate de aer condiționat, atât pentru locuințe, cât și pentru birouri sau spații comerciale, folosind echipamente profesionale și soluții moderne pentru rezultate eficiente și de durată. [cite: 2]
+2. [cite_start]**Calitate Estetică:** Ne dorim ca fiecare montaj să fie realizat curat, atent și cât mai estetic, astfel încât tu să te bucuri de confort și de un aparat care funcționează perfect încă din prima zi. [cite: 3]
+3. [cite_start]**Asistență & Întreținere:** Te ajutăm să alegi soluția potrivită pentru spațiul tău, ne ocupăm de instalare, verificare și punerea în funcțiune, iar la nevoie oferim și servicii de întreținere pentru ca sistemul tău de climatizare să funcționeze eficient în orice sezon. [cite: 5]
+
+### Zone de Activitate & Program (Zona Utilitară)
+* [cite_start]**Locație:** Montaj și service: Satu Mare [cite: 14]
+* **Programul nostru:**
+    * [cite_start]Luni - Vineri: 8:00 - 16:00 [cite: 12]
+    * [cite_start]Sâmbătă și Duminică: 8:00 - 16:00 [cite: 13]
+
+### Contact & Footer
+* [cite_start]**Date Directe:** * Telefon: 0745610044 (asigură-te că link-ul este `<a href="tel:0745610044">` pentru apelare rapidă de pe mobil) [cite: 9]
+    * [cite_start]Email: ingeniuspro@yahoo.com [cite: 10]
+* [cite_start]**Notă finală:** Pentru mai multe detalii sunați la numărul afișat. [cite: 15]
+
+---
+
+## 4. Instrucțiuni de Generare Pas cu Pas
+1. Generează mai întâi fișierul `index.html` cu toate clasele CSS pregătite.
+2. Generează fișierul `style.css` aplicând regulile Mobile-First. [cite_start]Pe ecrane sub 768px, cardurile de servicii și zona de contact trebuie să fie pe o singură coloană (100% lățime)[cite: 2]. Pe ecrane mai mari, așază-le pe coloane paralele utilizând `display: grid`.
+3. Generează fișierul `main.ts` în TypeScript pur (fără framework-uri grele precum Angular/React, doar validări DOM și evenimente `addEventListener`).
+
+Poți începe prin a genera structura HTML.
