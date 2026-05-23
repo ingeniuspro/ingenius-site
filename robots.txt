@@ -1,0 +1,6 @@
+# robots.txt for INGENIUS PRO
+# Update the Sitemap URL below to your actual site domain before publishing.
+User-agent: *
+Disallow:
+
+Sitemap: https://ingenius-pro.ro/sitemap.xml
